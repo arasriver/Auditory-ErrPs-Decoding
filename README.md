@@ -8,14 +8,14 @@ The main project is here:
 https://ucrisportal.univie.ac.at/en/publications/auditory-tagging-improving-performance-of-auditory-brain-computer/
 
 In this project I tried to keep the base project code and use them as much as possible and just modify or 
-write new code regarding to my purpose.
+write new code regarding to my purpose for finding ErrPs, MMN, FRN, N400 components.
 
-In the AID paradigm, participants see the prime numbers at the beginning then 
+In the AID paradigm, participants watch the prime numbers at the beginning on the screen, then 
 listen to three numbers in sequence and identify target word. 
 But in our project we want to know whether the brain's response
 to non-target ("option") words, error trials, and attention check trials, violation of expectation
 show something different from normal trials or not 
-and whether that information is decodable at the single trial level.
+and whether that information is decodable or not.
 
 The analysis contains approaches:
 - ERP analysis: Grand Average Event Related Potentials with cluster based
@@ -57,6 +57,7 @@ Each notebook is an independent scenario:
 - `AttCheck_P2.ipynb` — Attention Check trials vs control options that are in normal trials.
 - `PressButtonWrong_P2.ipynb` — When subjects press the button wrongly in correct trials, instead of attention check trials.
 
+There are also two other files for building epochs, with and without ICA filtering.
 Each notebook in cells: data construction, model/statistics, and plotting.
 Subjects can be included or excluded by editing the `SUBJECTS` list at the top of the
 first cell. File paths at the top of each notebook must be adjusted accroding to 
